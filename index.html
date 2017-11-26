@@ -5,7 +5,7 @@
   <link rel="stylesheet" href="styles.css">
 </head>
 
-<body >
+<body background="images\bg.png">
 <div>
 <h1 style="color:white" > Welcome to Tick - Rock </h1>
 <img src="timekeeper.png" height="200" width="200"class="right">
@@ -25,40 +25,13 @@
 <button class="button3" onclick="vacation()">Go for vacation -2000 Karma -500s Time</button>
 <p style="color:white">  <b> Gain time! </p>
 <button class="button4">Fight a neighbor -500 Karma -100s Time</button>
-<button class="button4" onclick="vacation()">Trade Karma -2000 Karma +500s Time</button>
+<button class="button4">Trade Karma -2000 Karma +500s Time</button>
 </div>
 
 <br>
-<img id = gamegif src="welcome.gif" height="250" width="250" class="centeredImage">
+<img id = gamegif src="images\welcome.gif" height="250" width="250" class="centeredImage">
 
-<script src="start.js"></script>
-<script >
-function volunteer() {
-  document.getElementById('gamegif').src = "volunteer.gif"
-}
-
-function plant() {
-  document.getElementById('gamegif').src = "plant.gif"
-}
-function drink() {
-  document.getElementById('gamegif').src = "drink.gif"
-}
-
-function playmusic() {
-  document.getElementById('gamegif').src = "volunteer.gif"
-}
-
-function vacation() {
-  document.getElementById('gamegif').src = "vacation.gif"
-}
-function car() {
-  document.getElementById('gamegif').src = "car.gif"
-}
-
-function movie() {
-  document.getElementById('gamegif').src = "movie.gif"
-}
-</script>
+<script src="game.js"></script>
 
 
 </body>
