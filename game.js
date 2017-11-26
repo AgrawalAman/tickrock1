@@ -23,27 +23,27 @@ function start() {
 window.onload = start;
 
 function volunteer() {
-  document.getElementById("gamegif").src = "volunteer.gif"
+  document.getElementById("gamegif").src = "images/volunteer.gif"
 }
 
 function plant() {
-  document.getElementById('gamegif').src = "plant.gif"
+  document.getElementById('gamegif').src = "images/plant.gif"
 }
 function drink() {
-  document.getElementById('gamegif').src = "drink.gif"
+  document.getElementById('gamegif').src = "images/drink.gif"
 }
 
 function playmusic() {
-  document.getElementById('gamegif').src = "volunteer.gif"
+  document.getElementById('gamegif').src = "images/volunteer.gif"
 }
 
 function vacation() {
-  document.getElementById('gamegif').src = "vacation.gif"
+  document.getElementById('gamegif').src = "images/vacation.gif"
 }
 function car() {
-  document.getElementById('gamegif').src = "car.gif"
+  document.getElementById('gamegif').src = "images/car.gif"
 }
 
 function movie() {
-  document.getElementById('gamegif').src = "movie.gif"
+  document.getElementById('gamegif').src = "images/movie.gif"
 }
