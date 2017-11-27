@@ -1,8 +1,9 @@
+var time;
+var karma;
 
 function start() {
-
-    var time = Math.floor((Math.random() * 100) + 200);
-    var karma = Math.floor((Math.random() * 100) + 10);;
+    time = Math.floor((Math.random() * 100) + 200);
+    karma = Math.floor((Math.random() * 100) + 10);;
     document.getElementById("karma").innerHTML = "Karma: " + karma;
     document.getElementById("time").innerHTML = "Time: " + time + "s";
     var counter=setInterval(timer, 1000);
@@ -13,7 +14,8 @@ function start() {
       if (time <= 0)
       {
          clearInterval(counter);
-         //counter ends, do end game alert over here
+         document.getElementById("gamegif").src = "images/gameover.gif"
+         window.alert("You are dead!");
          return;
       }
       document.getElementById("time").innerHTML = "Time: " + time + "s";
