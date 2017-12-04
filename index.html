@@ -5,44 +5,32 @@
   <link rel="stylesheet" href="styles.css">
 </head>
 
-<embed src="bgsound.mp3" autostart="true" loop="true" hidden="true">
+<embed src="https://www.soundjay.com/ambient/sounds/spring-weather-1.mp3" autostart="true" loop="true" hidden="true">
+<audio id="play" src="https://www.soundjay.com/button/sounds/button-27.mp3"></audio>
 
 <body background="images\bg.png">
-<div>
-<h1 style="color:white" > Welcome to Tick - Rock </h1>
-<img src="images/timekeeper.png" height="200" width="200"class="right">
-<h4 id="time" class="right" style="color:white"> time </h5>
-<h4 id="karma" class="right" style="color:white">> karma </h5>
+<div class="buttons">
+  <h1 style="color:white" > Welcome to Tick - Rock </h1>
+  <img src="images/timekeeper.png" height="200" width="200"class="right">
+  <h4 id="time" class="right" style="color:white"> time </h5>
+  <h4 id="karma" class="right" style="color:white">> karma </h5>
 
-<p style="color:white"> <b> Good Deeds - Gain Karma!! </p>
-<button id = 'volunteer' class="button1"> Volunteer +1000 Karma -100s Time </button>
-<button id = 'plant' class="button1"> Plant a Tree +1000 Karma -100s Time </button>
-<p style="color:white"> <b> Have Fun - Spend your time!! </p>
-<button id = 'car' class="button1"> Buy a car +1000 Karma -100s Time </button>
-<button id = 'vacation' class="button1"> Vacation on an island +1000 Karma -100s Time </button>
+  <p style="color:white"> <b> Good Deeds - Gain Karma!! </p>
+  <button id = 'volunteer' class="raise"> Volunteer +1000 Karma -100s Time </button>
+  <button id = 'plant' class="raise"> Plant a Tree +1000 Karma -100s Time </button>
+  <p style="color:white"> <b> Have Fun - Spend your time!! </p>
+  <button id = 'car' class="raise"> Buy a car +1000 Karma -100s Time </button>
+  <button id = 'vacation' class="raise"> Vacation on an island +1000 Karma -100s Time </button>
 
-<p style="color:white"> <b> Gain Time!! </p>
-<button id = 'fight' class="button1"> Fight a criminal -100 Karma +300s Time</button>
-<button id = 'trade' class="button1"> Trade Karma -200 karma +100s Time</button>
-<button id = 'gameover' class="button1"> Trade Karma -200 karma +100s Time</button>
-
+  <p style="color:white"> <b> Gain Time!! </p>
+  <button id = 'fight' class="raise"> Fight a criminal -100 Karma +300s Time</button>
+  <button id = 'trade' class="raise"> Trade Karma -200 karma +100s Time</button>
 </div>
 
 <br>
 <img id = gamegif src="images\welcome.gif" height="350" width="350" class="centeredImage">
 
 <script src="game.js"></script>
-<script>
-document.getElementById('volunteer').addEventListener("click",volunteer);
-document.getElementById('plant').addEventListener("click",plant);
-document.getElementById('car').addEventListener("click",car);
-document.getElementById('drink').addEventListener("click",drink);
-document.getElementById('fight').addEventListener("click",fight);
-document.getElementById('vacation').addEventListener("click",vacation);
-document.getElementById('trade').addEventListener("click",trade);
-document.getElementById('random').addEventListener("click",random);
-document.getElementById('movie').addEventListener("click",movie);
-</script>
 
 </body>
 </html>
