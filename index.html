@@ -2,7 +2,7 @@
 <title> Tick - Rock </title>
 
 <head onload="start()">
-  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="style.scss">
 </head>
 
 <embed src="https://www.soundjay.com/ambient/sounds/spring-weather-1.mp3" autostart="true" loop="true" hidden="true">
@@ -10,11 +10,10 @@
 
 <body background="images\bg.png">
 <div class="buttons">
-  <h1 style="color:white" > Welcome to Tick - Rock </h1>
+  <h1> <code> Welcome to Tick - Rock </code> </h1>
   <img src="images/timekeeper.png" height="200" width="200"class="right">
-  <h4 id="time" class="right" style="color:white"> time </h5>
-  <h4 id="karma" class="right" style="color:white">> karma </h5>
-
+  <h4 id="time" class="right" style="color: white"> time </h4>
+  <h4 id="karma" class="right"style="color: white">  karma </h4>
   <p style="color:white"> <b> Good Deeds - Gain Karma!! </p>
   <button id = 'volunteer' class="raise"> Volunteer +1000 Karma -100s Time </button>
   <button id = 'plant' class="raise"> Plant a Tree +1000 Karma -100s Time </button>
@@ -28,6 +27,7 @@
 </div>
 
 <br>
+
 <img id = gamegif src="images\welcome.gif" height="350" width="350" class="centeredImage">
 
 <script src="game.js"></script>
