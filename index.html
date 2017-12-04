@@ -1,5 +1,11 @@
 <html>
 <title> Tick - Rock </title>
+<style>
+img {
+    display: block;
+    margin: 5 auto;
+}
+</style>
 
 <head onload="start()">
   <link rel="stylesheet" href="style.scss">
@@ -9,11 +15,11 @@
 <audio id="play" src="https://www.soundjay.com/button/sounds/button-27.mp3"></audio>
 
 <body background="images\bg.png">
-<div class="buttons">
   <h1> <code> Welcome to Tick - Rock </code> </h1>
   <img src="images/timekeeper.png" height="200" width="200"class="right">
   <h4 id="time" class="right" style="color: white"> time </h4>
   <h4 id="karma" class="right"style="color: white">  karma </h4>
+
   <p style="color:white"> <b> Good Deeds - Gain Karma!! </p>
   <button id = 'volunteer' class="raise"> Volunteer +100 Karma -50s Time </button>
   <button id = 'plant' class="raise"> Plant a Tree +250 Karma -100s Time </button>
@@ -24,13 +30,12 @@
   <p style="color:white"> <b> Gain Time!! </p>
   <button id = 'fight' class="raise"> Fight a criminal -100 Karma +300s Time</button>
   <button id = 'trade' class="raise"> Trade Karma -200 karma +100s Time</button>
-</div>
-
-<br>
-
-<img id = gamegif src="images\welcome.gif" height="350" width="350" class="centeredImage">
-
+  <p class="rightp"> <br> Instructions: Gain the karma points and time to survive. <br> Be careful, one wrong move and you might die! </p>
+  <img id = gamegif src="images\welcome.gif" height="350" width="350" align="middle">
 <script src="game.js"></script>
-
+img {
+    display: block;
+    margin: 0 auto;
+}
 </body>
 </html>
